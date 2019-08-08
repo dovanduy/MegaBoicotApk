@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:id="@+id/ll_frase" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <FrameLayout android:orientation="horizontal" android:id="@+id/fl_frase" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:id="@+id/v_foto" android:background="#ff000000" android:visibility="gone" android:layout_width="5dp" android:layout_height="48dp"/>
+        <ImageView android:id="@+id/iv_avatar_f" android:background="#ff000000" android:padding="1dp" android:layout_width="48dp" android:layout_height="48dp" android:adjustViewBounds="true"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/pb_foto" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/pb_foto_inv" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" style="@style/pb_inverse"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_frase_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp">
+        <LinearLayout android:id="@+id/ll_frase_cab" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textStyle="bold" android:id="@+id/tv_nombre_f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+            <TextView android:textStyle="italic" android:id="@+id/tv_fcrea_f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:maxLines="1"/>
+        </LinearLayout>
+        <TextView android:id="@+id/tv_frase_f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="28px" android:maxLines="5"/>
+        <FrameLayout android:orientation="horizontal" android:id="@+id/fl_f" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/iv_foto_f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:adjustViewBounds="true"/>
+            <ProgressBar android:layout_gravity="center" android:id="@+id/pb_foto_f" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp"/>
+            <ProgressBar android:layout_gravity="center" android:id="@+id/pb_foto_f_inv" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" style="@style/pb_inverse"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

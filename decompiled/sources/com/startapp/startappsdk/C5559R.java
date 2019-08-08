@@ -1,0 +1,5 @@
+package com.startapp.startappsdk;
+
+/* renamed from: com.startapp.startappsdk.R */
+public final class C5559R {
+}
